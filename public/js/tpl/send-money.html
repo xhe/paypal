@@ -1,0 +1,58 @@
+<section id="loginPage">
+	<div data-role="header">
+		<h4>
+			Send Money
+		</h4>
+		<a href="#" data-theme="a">Home</a>
+		<a href='#logout'>Logout</a>
+		Welcome, <%= user.userName%>
+	</div>
+	
+	<div data-role="content" >
+				
+				<div data-role="fieldcontain" class="ui-hide-label">
+					<label for="to">To:</label>
+					<input type="text" id="to" value="" placeholder="To:"/>
+					<div id='errorTo' class='error' style='display:none'>Invalid email address.</div>
+				</div>
+			
+				<div data-role="fieldcontain" class="ui-hide-label">
+					<label for="amount">Amount:</label>
+					<input type="text" id="amount" placeholder="Amount:"  />
+					<div id='errorAmount' class='error' style='display:none'>Invalid Amount.</div>
+				</div>
+				
+				<div data-role="fieldcontain" class="ui-hide-label">
+					<select id='currency'/>
+					<div id='divEquivalentUSD' class='error'/>
+				</div>
+				
+				
+				
+				<div data-role="fieldcontain" class="ui-hide-label">
+					<label for="note">Message (optional):</label>
+					<textarea name="textarea" id="note" placeholder="Message (optional):"></textarea>
+				</div>
+				
+					
+				<fieldset data-role="controlgroup">
+					<legend>What's this payment for:</legend>
+				     	<input type="radio" name="radio-purpose" id="radio-purpose-0" value="0" checked="checked" />
+				     	<label for="radio-purpose-0">I'm sending money to family or friends</label>
+						<input type="radio" name="radio-purpose" id="radio-purpose-1" value="1" />
+				     	<label for="radio-purpose-1">I'm paying for goods or service</label>
+				</fieldset>
+				
+				
+				<div id='errorAll' class='error' style='display:none'>Please enter information.</div>
+			
+		</div>
+		
+		<footer data-role="footer" data-position="fixed">
+			<div class="center">
+				<button data-inline="true" data-theme="d">Clear</button>
+				<button data-inline="true" data-theme="d" id='sendMoney'>Next</button>
+			</div>
+		</footer>
+		
+</section>

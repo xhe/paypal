@@ -1,0 +1,16 @@
+.center{
+	text-align: center;
+}
+
+.error{
+	color: #FF0000;
+}
+
+#tbl_transactions{
+	width:100%;
+}
+
+#tbl_transactions th td{
+	width:33%;
+	text-align: center;
+}

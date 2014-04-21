@@ -1,0 +1,21 @@
+<table data-role="table" id="tbl_transactions">
+	 <thead>
+	 	<tr>
+			<th >Receipient</th>
+			<th >Amount</th>
+			<th >Currency</th>
+	 	</tr>
+	 </thead>
+	<tbody>
+	<% _.each(transactions, function(item){ %>
+		
+		<tr>
+			<td><%= item.get('to')%></td>
+			<td><%= item.get('amount')%></td>
+			<td><%= item.get('currency')%></td>
+		</tr>
+	
+	<%})%>
+	</tbody>
+	
+</table>

@@ -1,0 +1,27 @@
+<section id="loginPage">
+	<div data-role="header">
+		<h4>
+			Transaction History
+		</h4>
+		<a href="#" data-theme="a">Home</a>
+		<a href='#logout'>Logout</a>
+		Welcome, <%= user.userName%>
+	</div>
+	
+	<div data-role="content" >
+				
+				<h2>
+					List of your transactions
+				</h2>
+				<div id='divTransactions'/>
+
+	</div>
+		
+	<footer data-role="footer" data-position="fixed">
+			<div class="center">
+				<button data-inline="true" data-theme="d">Clear</button>
+				<button data-inline="true" data-theme="d" id='sendMoney'>Next</button>
+			</div>
+	</footer>
+		
+</section>
